@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="../css/tur.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Destin<span>Eye</span></a>
+
+      <div class="navbar-nav">
+        <a href="?beranda">Beranda</a>
+        <a href="?destinasi">Destinasi</a>
+        <a href="blog.html">Blog & News</a>
+        <a href="#contact">Cek Booking</a>
+      </div>
+    </nav>
+    <section class="cari">
+      <div class="image">
+        <div class="text">
+          <h2>Semua Tour<i></i></h2>
+        </div>
+        <div class="search">
+          <form>
+            <div class="form">
+              <div class="kategori">
+                <label><b>Pilih Kategori</b></label
+                ><br />
+                <select>
+                  <option>Semua Kategori</option>
+                  <option>Adventure Tourism</option>
+                  <option>Convention Tourism</option>
+                  <option>Cultural Tourism</option>
+                  <option>Recreaction Tourism</option>
+                </select>
+              </div>
+              <div class="destinasi">
+                <label><b>Pilih Destinasi</b></label
+                ><br />
+                <select>
+                  <option>Semua Destinasi</option>
+                  <option>Jakarta</option>
+                  <option>Bali</option>
+                  <option>Semarang</option>
+                  <option>Makassar</option>
+                  <option>Lombok</option>
+                </select>
+              </div>
+            </div>
+            <div class="carikan">
+              <input type="submit" value="Search" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="packages">
+      <div class="box-container">
+        <div class="box">
+          <img src="../jpg/goa1.jpg" alt="" />
+
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Yogyakarta, Sleman</h4>
+            <a class="detail" href=""><b>Goa Pindul </b></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 2.800.000</h5></div>
+            <a href="?pemesanan1" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/explore.webp" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Kaliurang, Sleman</h4>
+            <a class="detail" href=""><b>Open Trip Explore Merapi</b></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 750.000</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/curug.webp" alt="" />
+          <div class="content">
+            <h4>
+              <i class="fas fa-map-marker-alt"></i>Kramat Jati, East Jakarta
+            </h4>
+            <a class="detail" href=""
+              ><b>Canyoneering Curug Cikondang Cianjur</b></a
+            >
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 500.000</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/alam.webp" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Semarang</h4>
+            <a class="detail" href=""
+              ><b>Wisata Alam Semarang Full Day by Paradiso Tour</b></a
+            >
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 195.500</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/kuta.jpg" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Kuta</h4>
+            <a class="detail" href=""><b>Kuta Mandalika Full Day Tour</b></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 212.500</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/highland.webp" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Makassar</h4>
+            <a class="detail" href=""><b>Makassar Highland Tour</b></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 585.000</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/air.jpg" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Bandung</h4>
+            <a class="detail" href=""
+              ><b>Eksplorasi Air Terjun Tumpaksewu Lumajang</b></a
+            >
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 260.000</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/top3.jpg" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Jepara</h4>
+            <a class="detail" href=""><b>Paket Wisata Karimunjawa</b></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 1.300.000</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="../jpg/bromo.webp" alt="" />
+          <div class="content">
+            <h4><i class="fas fa-map-marker-alt"></i>Surabaya</h4>
+            <a class="detail" href=""
+              ><b>Bromo Private Day Tour dengan Air Terjun Madakaripura</b></a
+            >
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="price"><h5>Rp 780.000</h5></div>
+            <a href="#" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our service</a></li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">shipping</a></li>
+              <li><a href="">terurns</a></li>
+              <li><a href="">order status</a></li>
+              <li><a href="">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="">watch</a></li>
+              <li><a href="">bag</a></li>
+              <li><a href="">shoes</a></li>
+              <li><a href="">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

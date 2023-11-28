@@ -1,0 +1,417 @@
+:root {
+  --blue: #00ffff;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--blue);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--blue);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--blue);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--blue);
+}
+
+.navbar-login {
+  padding: 10px;
+  color: black;
+  background-color: var(--blue);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  width: 7%;
+  border: 1px solid var(--blue);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+
+
+
+
+
+
+
+.heading {
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../jpg/wisata1.jpg);
+  background-position: bottom center;
+  width: 100%;
+  position: relative;
+  height: 30vh;
+}
+
+.text-heading h1 {
+  text-align: center;
+  padding-top: 4rem;
+  color: white;
+}
+
+.text-heading p {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.text-heading i {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  margin-top: 50px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--blue);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-col ul li {
+  list-style: none;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+
+.marquee .text-heading font {
+  color: #fff;
+  background-color: orange;
+  padding: 10px;
+}
+
+.marquee {
+  border-top: 1px solid;
+  width: 100%;
+  padding: 7px;
+  font-size: 13px;
+}
+
+.table-left img {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ececec;
+}
+
+tr {
+  border-bottom: 5px solid #ececec;
+}
+
+td {
+  padding-right: 130px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.total {
+  width: 40%;
+  padding: 13px;
+  border: 1px solid #ececec;
+  border-bottom: 5px solid #ececec;
+  background-color: #fcfcfc;
+  text-align: center;
+}
+
+.total font {
+  color: #f75400;
+}
+
+.table-left {
+  flex: 1; /* Take up available space */
+  padding-right: 20px; /* Adjust spacing between left and right sections */
+
+  padding: 15px;
+}
+
+.table-right {
+  flex: 1; /* Take up available space */
+  padding-left: 20px; /* Adjust spacing between left and right sections */
+
+  padding: 15px;
+  border-left: 1px solid #ececec;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column; /* Atur orientasi flexbox menjadi column */
+  align-items: flex-start; /* Setel item ke bagian atas */
+  margin-top: 50px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.status {
+  margin-top: 15px;
+  border: 1px solid #ececec;
+  background-color: #fcfcfc;
+  padding: 13px;
+  padding-left: 35px;
+  width: 100%;
+  border-bottom: 5px solid #ececec;
+}
+
+.table {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ececec;
+  border-bottom: 5px solid #ececec;
+}
+
+.table-right i {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.table-right .text {
+  color: #0080ff;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.daftar {
+  margin-top: 40px;
+  color: #0080ff;
+  font-size: 17px;
+}
+
+.daftar {
+  margin-bottom: 20px;
+}
+
+.detail-tamu {
+  color: #24262b;
+  background-color: #d3d3d3;
+  width: 15%;
+  text-align: center;
+  padding: 13px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* pembayaran */
+.bayar {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 15px;
+}
+.pembayaran {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666;
+}
+
+.tabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ececec;
+  border-bottom: 5px solid #ececec;
+  padding: 10px;
+  
+}
+
+.payment-option {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.pilih-pembayaran {
+  margin-top: 30px;
+}
+
+button {
+  background-color: #1ba0e2;
+  color: #fff;
+  width: 15%;
+  height: 5vh;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f75400;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*transaksi */
+
+.tabel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ececec;
+  border-bottom: 5px solid #ececec;
+  padding: 10px;
+}
+
+.payment-option {
+  margin-bottom: 10px;
+}
+
+.transaksi {
+  margin-top: 30px;
+}
+
+.transaksi p {
+  font-size: 18px;
+  color: #0080ff;
+}
+
+ul li::marker {
+  
+  font-size: 1em;
+}
+
+.transaksi ul li {
+  margin: 5px 10px 5px 20px;
+  
+}
+
+.transaksi ul {
+  margin-top: 15px;
+}

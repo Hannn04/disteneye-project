@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="stylesheet" href="css/pemesanan1.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Destin<span>Eye</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Beranda</a>
+        <a href="tur.html">Destinasi</a>
+        <a href="blog.html">Blog & News</a>
+        <a href="#contact">Cek Booking</a>
+      </div>
+    </nav>
+    <section class="marq">
+      <div class="marquee">
+        <marquee class="text-heading"
+          ><font><b>Promo</b></font> Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Qui deserunt facilis porro obcaecati sit et vitae,
+          voluptas hic, dolores est laborum? Numquam non fugit eveniet saepe,
+          vitae harum? Eligendi, voluptas?
+        </marquee>
+      </div>
+    </section>
+    <section>
+      <div class="pemesanan">
+        <div class="pemesanan-tiket">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="jpg/goa1.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="jpg/goa.webp" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="jpg/goa8.jpg" style="width: 100%" />
+            </div>
+            <div class="tombol" style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <br />
+
+          <div class="pesan">
+            <form>
+              <h2>Goa Pindul</h2>
+              <br />
+              <div class="icon-pesan">
+                <p>
+                  <i class="fa fa-tag" aria-hidden="true"></i>Recreaction
+                  tourism
+                </p>
+                <p><i class="fas fa-map-marker-alt"></i>Yogyakarta, Sleman</p>
+              </div>
+              <p class="prace"><b>Rp 2.800.000</b></p>
+              <div class="pilih">
+                <input type="date" placeholder="Tanggal Perjalanan" /><input
+                  type="number"
+                  maxlength="2"
+                  min="0"
+                  max="99"
+                />
+              </div>
+              <button onclick="openForm()" type="submit" id="pesan" class="pemesanan-ticket" type="submit">
+                <i class="fa fa-check" aria-hidden="true"></i>Pesan Sekarang
+              </button>
+            </form>
+            <div class="share">
+              <p>#Bagikan informasi ini kepada teman anda</p>
+              <div class="icon-share">
+                <a class="facebook" href="#"
+                  ><i class="fab fa-facebook-f"></i></a>
+                <a class="whatsapp" href="#"><i class="fab fa-whatsapp"></i></a>
+                <a class="twitter" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="instagram" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="linkedin" href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="post-filter container">
+          <span class="filter-item active-filter" data-filter="itinerary"
+            >Itinerary</span
+          >
+          <span class="filter-item" data-filter="design">Detail</span>
+          <span class="filter-item" data-filter="lainnya">Tour Lainnya</span>
+        </div>
+      </div>
+      <div class="text-Itinerary itinerary">
+        <h3><b>Day 1: Arrival in Yogyakarta.</b></h3>
+        <br />
+        <ul>
+          <li>Arrive in Yogyakarta, the nearest major city to Goa Pindul.</li>
+          <li>Check into your accommodation and rest</li>
+        </ul>
+
+        <h3>Day 2: Morning Exploration.</h3>
+        <br />
+        <ul>
+          <li>Start your day early and have a hearty breakfast.</li>
+          <li>Travel to Goa Pindul (approximately 2 hours from Yogyakarta).</li>
+          <li>
+            Arrive at Goa Pindul and register for the cave tubing experience.
+          </li>
+          <li>
+            Participate in the cave tubing adventure, exploring the underground
+            river inside the cave
+          </li>
+        </ul>
+        <h3>Day 2: Afternoon Activities.</h3>
+        <br />
+        <ul>
+          <li>
+            After the cave tubing experience, have lunch at a local eatery.
+          </li>
+          <li>
+            Visit nearby attractions like the Gunung Kidul Hills or Goa Jomblang
+            (another cave system known for its unique light phenomenon).
+          </li>
+          <li>Return to Yogyakarta in the evening.</li>
+        </ul>
+        <h3>Day 3: Yogyakarta City Tour</h3>
+        <br />
+        <ul>
+          <li>
+            Spend the day exploring Yogyakarta's cultural and historical sites.
+          </li>
+          <li>
+            Visit the Kraton (Yogyakarta Palace), Taman Sari Water Castle, and
+            Malioboro Street for shopping.
+          </li>
+          <li>
+            Explore local art markets and try traditional Javanese cuisine for
+            dinner.
+          </li>
+        </ul>
+        <h3>Day 4: Cultural Immersion</h3>
+        <br />
+        <ul>
+          <li>
+            Visit the Borobudur Temple, a UNESCO World Heritage site, known for
+            its stunning architecture and rich history.
+          </li>
+          <li>Explore the nearby Pawon and Mendut temples.</li>
+          <li>
+            Experience a traditional Indonesian dance performance in the
+            evening.
+          </li>
+        </ul>
+        <h3>Day 5: Departure</h3>
+        <br />
+        <ul>
+          <li>
+            Depending on your departure time, you may have some free time in the
+            morning for last-minute shopping or sightseeing.
+          </li>
+          <li>Explore the nearby Pawon and Mendut temples.</li>
+          <li>
+            Check out from your accommodation and head to the airport for your
+            departure.
+          </li>
+        </ul>
+      </div>
+      <div class="text-Itinerary design">
+        <h3><b>Tour Details</b></h3>
+        <br />
+        <p>
+          Di Cave Tubing Goa Pindul, Anda bisa merasakan sensasi berpetualang di
+          sungai di dalam gua dengan menggunakan baju pelampung. Sambil
+          menyusuri lembah gelap di dalam gua dengan stalaktit dan stalagmit,
+          Anda juga akan mendapatkan cerita tentang perjalanan Joko Singlulung
+          mencari ayahnya. Cave tubing merupakan perpaduan antara rafting dan
+          caving dengan menggunakan rubber tube. Anda menikmati perjalanan
+          dengan berbaring di dalam satu set tabung dan mengikuti arus sungai
+          bawah tanah. Cave tubing sangat cocok bagi mereka yang menyukai
+          perjalanan petualangan. Sebelum mencapai base camp, Anda bisa melihat
+          sebuah desa indah yang berbeda dari desa lain di Gunung Kidul.
+          Sebenarnya, Anda bisa melihat banyak pohon dalam perjalanan menuju ke
+          sana. Seperti yang Anda lihat, itu adalah pohon jati. Ini seperti
+          hutan kecil di sekitar perjalanan Anda. Perjalanan ini membuat momen
+          tak terlupakan.
+        </p>
+        <div class="tabel">
+          <span><b>"</b></span>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Perferendis aliquam asperiores sint vel.
+          </p>
+        </div>
+      </div>
+      <div class="text-Itinerary lainnya">
+        <h3><b>Mungkin Anda tertarik...</b></h3>
+        <br />
+        <div class="kotak">
+          <div class="box">
+            <img src="jpg/curug.webp" alt="" />
+            <div class="content">
+              <h4>
+                <i class="fas fa-map-marker-alt"></i>Kramat Jati, East Jakarta
+              </h4>
+              <a class="detail" href=""
+                ><b>Canyoneering Curug Cikondang Cianjur</b></a
+              >
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+              <div class="price"><h5>Rp 500.000</h5></div>
+              <a href="#" class="btn">Lihat Detail</a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="jpg/alam.webp" alt="" />
+            <div class="content">
+              <h4><i class="fas fa-map-marker-alt"></i>Semarang</h4>
+              <a class="detail" href=""
+                ><b>Wisata Alam Semarang Full Day by Paradiso Tour</b></a
+              >
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+              <div class="price"><h5>Rp 195.500</h5></div>
+              <a href="#" class="btn">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our service</a></li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">shipping</a></li>
+              <li><a href="">terurns</a></li>
+              <li><a href="">order status</a></li>
+              <li><a href="">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="">watch</a></li>
+              <li><a href="">bag</a></li>
+              <li><a href="">shoes</a></li>
+              <li><a href="">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="checkout" id="popupForm">
+      <div class="checkout-dalam">
+        <button id="back" onclick="closeForm()" class="back">X</button>
+        <h2>Checkout</h2>
+        <div class="check-text"></div>
+
+        <div class="checkout-pemesanan">
+          <div class="checkout-left">
+            <form action="">
+              <div class="atas-checkout">
+                <h3>Detail Pemesananan</h3>
+                <div class="checkout-detail">
+                  <div class="atas">
+                    <div class="pilih-title">
+                      <label for="">Title</label><br />
+                      <select class="select" name="" id="">
+                        <option value="">Tuan</option>
+                        <option value="">Nyonya</option>
+                      </select>
+                    </div>
+                    <div class="namadepan">
+                      <label for="">Nama Depan</label><br />
+                      <input
+                        class="nama"
+                        type="text"
+                        placeholder="Masukkan nama depan"
+                      />
+                    </div>
+                    <div class="namabelakang">
+                      <label for="">Nama Belakang</label><br />
+                      <input
+                        class="nama"
+                        type="text"
+                        placeholder="Masukkan nama belakang"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="bawah">
+                    <div class="namadepan">
+                      <label for="">No Telepon/Hp</label><br />
+                      <input
+                        class="nama"
+                        type="text"
+                        placeholder="Masukkan no.telepon/hp"
+                      />
+                    </div>
+                    <div class="namabelakang">
+                      <label for="">Alamat Email</label><br />
+                      <input
+                        class="nama"
+                        type="email"
+                        placeholder="Masukkan alamat email"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tamu">
+                <h3>Detail Tamu</h3>
+                <h4>Tamu 1</h4>
+                <div class="checkout-detail">
+                  <div class="atas">
+                    <div class="pilih-title">
+                      <label for="">Title</label><br />
+                      <select class="select" name="" id="">
+                        <option value="">Tuan</option>
+                        <option value="">Nyonya</option>
+                      </select>
+                    </div>
+                    <div class="namadepan">
+                      <label for="">Nama Depan</label><br />
+                      <input
+                        class="nama"
+                        type="text"
+                        placeholder="Masukkan nama depan"
+                      />
+                    </div>
+                    <div class="namabelakang">
+                      <label for="">Nama Belakang</label><br />
+                      <input
+                        class="nama"
+                        type="text"
+                        placeholder="Masukkan nama belakang"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="prosespemesanan">Proses Pemesanan</button>
+            </form>
+            
+          </div>
+          
+          <div class="checkout-right">
+            <h3>Detail Tour</h3>
+            <div class="table">
+              <img src="jpg/goa.webp" alt="" />
+              <p class="pindul"><b>Goa Pindul</b></p>
+              <p class="location">
+                <i class="fas fa-map-marker-alt"></i>Sleman, Yogyakarta
+              </p>
+              <p class="location">
+                <i class="fa fa-clock" aria-hidden="true"></i>5 day
+              </p>
+              <br />
+              <table>
+                <tr>
+                  <td><b>Berangkat</b></td>
+                  <td>29 November 2023</td>
+                </tr>
+                <tr>
+                  <td><b>Tamu</b></td>
+                  <td>1 Orang</td>
+                </tr>
+                <tr>
+                  <td><b>Harga</b></td>
+                  <td>Rp 2.800.000/Pax</td>
+                </tr>
+              </table>
+              <br />
+              <div class="total">
+                <strong>Total <font>Rp 2.800.000</font></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
