@@ -28,7 +28,7 @@ include "koneksi.php";
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#destinasi">Destinasi</a>
-        <a href="#contact">Kontak</a>
+        <a href="?booking">Kontak</a>
       </div>
     </nav>
     <section id="home" class="beranda">

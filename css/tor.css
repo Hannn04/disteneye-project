@@ -1,0 +1,456 @@
+:root {
+  --blue: #00ffff;
+}
+
+body {
+  height: 2000px;
+  background: white;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--blue);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--blue);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--blue);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--blue);
+}
+
+.navbar-login {
+  padding: 10px;
+  color: black;
+  background-color: var(--blue);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  width: 7%;
+  border: 1px solid var(--blue);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.packages .box-container {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.packages .box-container .box {
+  flex: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+}
+
+.packages .box-container .box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.packages .box-container img {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content {
+  padding: 1rem 2rem;
+}
+
+.packages .box-container .box .content .detail {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: black;
+}
+
+.packages .box-container .box .content .detail i {
+  color: var(--blue);
+}
+
+.packages .box-container .box .content .detail:hover {
+  color: orange;
+}
+
+.packages .box-container .box .content p {
+  
+  font-size: 1rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 40px;
+  background-color: var(--blue);
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateX(10px);
+  border: 2px solid var(--blue);
+  background: transparent;
+  color: var(--blue);
+}
+
+.packages .box-container .box .content .price h5 {
+  font-size: 1rem;
+  color: #ff6666;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.packages .box-container .box .content h4 i {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #666;
+}
+
+.packages .box-container .box .content h4 {
+  
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  color: #666;
+}
+
+.packages .box-container .box .content .btn {
+  margin-top: 4%;
+}
+
+.cari {
+  position: relative;
+  height: 45vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../jpg/wisata1.jpg);
+    background-position: bottom center;
+  background-size: cover;
+  text-align: center; /* Center the content horizontally within the section */
+}
+
+.image {
+  display: inline-block; /* Make the image div an inline block to center its content */
+  margin-top: 5%;
+}
+
+.text,
+.search {
+  /* Display text and search divs side by side */
+  /* Align elements to the top within the image div */
+  margin-top: 3%;
+}
+
+.form {
+  display: flex; /* Display the form elements inline */
+}
+
+.kategori,
+.destinasi {
+  margin-right: 20px; /* Add some right margin between the category and destination dropdowns */
+}
+
+/* Adjustments for better visual appeal */
+label {
+  display: block; /* Display labels as blocks for better spacing */
+  margin-bottom: 3px; /* Add some bottom margin to labels for spacing */
+}
+
+select {
+  width: 300px; /* Adjust the width to your preference */
+  height: 63%;
+}
+
+/* Optional: If you want to make the dropdown arrow visible and adjust its position */
+select::-ms-expand {
+  display: none;
+}
+
+/* Optional: Add some styles to improve appearance */
+select {
+  padding: 8px; /* Add padding for better visual appeal */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  cursor: pointer;
+}
+
+.carikan {
+  margin-top: 5%;
+}
+
+input[type="submit"] {
+  width: 20%; /* Adjust the margin as needed for spacing */
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--blue);
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+  color: white;
+}
+
+.cari h2 {
+  color: #fff;
+}
+
+.cari label {
+  color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  margin-top: 50px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--blue);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #fff;
+}
+
+.social a:hover i {
+  color: #ffffff;
+  transition: all ease 0.5s;
+}
+.tag{
+  color: #24262b;
+}
+.tag i{
+margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, 0.8);
+    text-align: center;
+    z-index: 999;
+  }
+
+  .navbar .navbar-nav.active {
+    display: flex;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .navbar-login {
+    width: auto;
+    padding: 10px;
+  }
+
+  .packages .box-container {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .packages .box-container .box {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cari {
+    height: auto;
+  }
+
+  .image {
+    display: block;
+    margin-top: 5%;
+  }
+
+  .text,
+  .search {
+    margin-top: 5%;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .kategori,
+  .destinasi {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .carikan {
+    margin-top: 5%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+
+

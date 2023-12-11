@@ -26,8 +26,38 @@
         <a href="index.html">Beranda</a>
         <a href="tur.html">Destinasi</a>
         <a href="blog.html">Blog & News</a>
-        <a href="#contact">Cek Booking</a>
+        <a href="?booking">Cek Booking</a>
       </div>
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2 d-none d-lg-inline text-gray-600 large"><?= $_SESSION['nama'] ?></span>
+            <img class="img-profile rounded-circle">
+                 
+        </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                </a>
+                <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Activity Log
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../auth/" data-toggle="modal" data-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                </a>
+            </div>
+        </li>
+
     </nav>
     <section class="marq">
       <div class="marquee">
@@ -349,25 +379,24 @@
           </div>
           <div class="recent-post">
             <h3>Recent Post</h3>
-            <a href="#"
-              >5 Great Questions To Ask You<br />
-              Pick A Vacation <br /></a
+            <a href="article7.html"
+              >Destinasi Wisata Halal di Indonesia <br /></a
             ><br />
-            <a href="#"
-              >5 Great Questions To Ask You<br />
-              Pick A Vacation <br /></a
+            <a href="article4.html"
+              >Icip-icip Beras Singkong Alias Rasi<br />
+              di Kampung Adat Cirendeu Dekat Bandung <br /></a
             ><br />
-            <a href="#"
-              >5 Great Questions To Ask You<br />
-              Pick A Vacation <br /></a
+            <a href="article6.html"
+              >Taman Nasional Komodo, Menikmati<br />
+              Pesona Situs Keajaiban Duni <br /></a
             ><br />
-            <a href="#"
-              >5 Great Questions To Ask You<br />
-              Pick A Vacation <br /></a
+            <a href="article3.html"
+              >Desa Senaru Juara Desa Wisata<br />
+              Nusantara 2023 untuk Tema Sosial Budaya <br /></a
             ><br />
-            <a href="#"
-              >5 Great Questions To Ask You<br />
-              Pick A Vacation
+            <a href="article2.html"
+              >APRC Danau Toba, Ajang Menikmati<br />
+              Balapan dengan Keindahan Alam yang Memukau
             </a>
           </div>
         </div>
@@ -377,31 +406,32 @@
       <div class="container">
         <div class="row">
           <div class="footer-col">
-            <h4>company</h4>
+            <h4>Company</h4>
             <ul>
-              <li><a href="">about us</a></li>
-              <li><a href="">our service</a></li>
+            <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
               <li><a href="">privacy policy</a></li>
-              <li><a href="">affiliate program</a></li>
+              <li><a href="">Management Team</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>get help</h4>
             <ul>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">shipping</a></li>
-              <li><a href="">terurns</a></li>
-              <li><a href="">order status</a></li>
-              <li><a href="">payment options</a></li>
+            <li><a href="">FAQ</a></li>
+              <li><a href="">Booking Guide</a></li>
+              <li><a href="">Purchase Process</a></li>
+              <li><a href="">Customer Support</a></li>
+              <li><a href="">Payment Options</a></li>
+              <li><a href="">Site Use Instructions</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>online shop</h4>
+            <h4>Other</h4>
             <ul>
-              <li><a href="">watch</a></li>
-              <li><a href="">bag</a></li>
-              <li><a href="">shoes</a></li>
-              <li><a href="">dress</a></li>
+            <li><a href="">Terms And Conditions</a></li>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">DestinEye blog</a></li>
+              <li><a href="">License and Copyright</a></li>
             </ul>
           </div>
           <div class="footer-col">

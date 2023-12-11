@@ -16,7 +16,7 @@ $data_status = mysqli_fetch_assoc($query_status);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DestinEye</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -30,16 +30,20 @@ $data_status = mysqli_fetch_assoc($query_status);
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/beranda.css" />
+    <link rel="shortcut icon" href="../jpg/logo destineye.png" type="image/x-icon">
     
   </head>
   <style>
+    .navbar.scrolled {
+  background-color: rgba(1, 1, 1, 0.8); /* Add your desired background color */
+}
     /* Navbar styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333; /* Ganti dengan warna latar belakang yang diinginkan */
+   /* Ganti dengan warna latar belakang yang diinginkan */
   padding: 15px;
   color: white; /* Ganti dengan warna teks yang diinginkan */
 }
@@ -98,14 +102,15 @@ $data_status = mysqli_fetch_assoc($query_status);
 }
 </style>
   <body>
-    <nav class="navbar">
+    <nav class="navbar transparent">
       <a href="#" class="navbar-logo">Destin<span>Eye</span></a>
 
       <div class="navbar-nav">
         <a href="?beranda">Beranda</a>
         <a href="?destinasi">Destinasi</a>
         <a href="blog.html">Blog & News</a>
-        <a href="#?booking">Cek Booking</a>
+        <a href="?booking">Cek Booking</a>
+        <a href="?konfirmasi">Konfirmasi Pembayaran</a>
       </div>
       <!-- Nav Item - User Information -->
       <li class="nav-item dropdown no-arrow">
@@ -155,68 +160,65 @@ $data_status = mysqli_fetch_assoc($query_status);
     </section>
 
     <section id="destinasi" class="tour">
-      <div class="center-text">
+      <div data-aos="fade-down" data-aos-duration="1000" class="center-text">
         <h3>Destinasi</h3>
         <h2>Tur Populer</h2>
         <hr style="width: 200px" />
       </div>
       <div class="tour-content">
-        <div class="box">
+        <div data-aos="fade-right" data-aos-duration="1000" class="box">
           <img src="../jpg/top1.jpg" />
           <h6>Papua Barat</h6>
           <h4>Raja Ampat</h4>
         </div>
 
-        <div class="box">
-          <img src="../jpg/top3.jpg" />
-          <h6>Jawa Tengah</h6>
-          <h4>Karimun Jawa</h4>
+        <div data-aos="zoom-in" data-aos-duration="1000" class="box">
+          <img src="../jpg/Paket Wisata Karimunjawa.jpg" /><a href="?pemesanan8"><h6>Jawa Tengah</h6>
+          <h4>Karimun Jawa</h4</a>
+          
         </div>
 
-        <div class="box">
+        <div data-aos="fade-left" data-aos-duration="1000" class="box">
           <img src="../jpg/top2.jpg" />
           <h6>Sumatera Utara</h6>
           <h4>Danau Toba</h4>
         </div>
       </div>
-      <div class="center-btn">
-        <a href="?destinasi" class="button">Lihat Tur</a>
+      <div data-aos="zoom-in" data-aos-duration="1000" class="center-btn">
+        <a href="?destinasi" class="button">Lihat Semua Tour</a>
       </div>
     </section>
 
     <section class="city">
-      <div class="center-text">
-        <h2>Kota</h2>
-      </div>
       <div class="city-content">
-        <div class="row">
+        <div data-aos="fade-down" data-aos-duration="1000" class="row">
           <div class="row-img">
             <img src="../jpg/jakarta1.jpg" />
           </div>
           <h4>Jakarta</h4>
         </div>
 
-        <div class="row">
+        <div data-aos="fade-up" data-aos-duration="1000" class="row">
           <div class="row-img">
             <img src="../jpg/Yogyakarta1.jpg" />
           </div>
           <h4>Yogyakarta</h4>
         </div>
 
-        <div class="row">
+        <div data-aos="fade-down" data-aos-duration="1000" class="row">
           <div class="row-img">
-            <img src="../jpg/Semarang1.jpg" />
+            <img src="../jpg/mataram1.jpg" />
           </div>
-          <h4>Semarang</h4>
+          <h4>Mataram</h4>
         </div>
 
-        <div class="row">
+        <div data-aos="fade-up" data-aos-duration="1000" class="row">
           <div class="row-img">
             <img src="../jpg/Makassar1.jpg" />
           </div>
           <h4>Makassar</h4>
         </div>
-        <div class="row">
+        <div data-aos="fade-down" data-aos-duration="1000" class="row">
           <div class="row-img">
             <img src="../jpg/bandung1.jpg" />
           </div>
@@ -226,19 +228,20 @@ $data_status = mysqli_fetch_assoc($query_status);
     </section>
 
     <section id="blog">
-      <div class="blog-heading">
+      <div data-aos="fade-down" data-aos-duration="1000" class="blog-heading">
         <span>My Recent Posts</span>
         <h3>My Blog</h3>
       </div>
       <div class="blog-container">
-        <div class="blog-box">
+        <div data-aos="fade-left" data-aos-duration="1600" class="blog-box">
           <div class="blog-img">
             <img src="../jpg/mandalika.jpg" alt="Blog" />
           </div>
           <div class="blog-text">
             <span>24 November 2023 / Lombok</span>
             <a href="article.html" class="blog-title"
-              >Jurus InJourney Genjot Destinasi Wisata Super...</a
+              >Jurus InJourney Genjot Destinasi Wisata Super Prioritas di
+                  Mandalika.</a
             >
             <p>
               PT Aviasi Pariwisata Indonesia atau InJourney terus berkomitmen
@@ -254,82 +257,90 @@ $data_status = mysqli_fetch_assoc($query_status);
             <a href="article.html">Read More</a>
           </div>
         </div>
-        <div class="blog-box">
+        <div data-aos="fade-left" data-aos-duration="1300" class="blog-box">
           <div class="blog-img">
-            <img src="../jpg/wisata.jpg" alt="Blog" />
+            <img src="../jpg/nusantara.jpg" alt="Blog" />
           </div>
           <div class="blog-text">
-            <span>18 July 2023 / Jakarta</span>
+            <span>26 November 2023 / Jakarta</span>
             <a href="article.html" class="blog-title"
-              >What Has Happened of All of the web Design Ideas?</a
+              > Desa Senaru Juara Desa Wisata Nusantara 2023 untuk Tema Sosial Budaya</a
             >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Possimus, facilis aperiam sit officiis optio, velit in quae
-              reprehenderit ipsa unde soluta dicta natus tempora, numquam fugit
-              quos molestiae error provident?
+            Kementerian Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi
+              (Kemendes) merilis daftar 15 Pemenang Lomba Desa Wisata Nusantara
+              2023. Desa Senaru berhasil terpilih sebagai salah satu pemenang
+              dengan kategori Desa Wisata Tematik Sosial Budaya.<br /><br />
+              Mengusung tagline "Berwisata Ke Desa Aja!", Lomba Desa Wisata
+              Nusantara merupakan salah satu program Kemendes untuk mendorong
+              perkembangan ekonomi desa dan meningkatkan kesejahteraan
+              masyarakat pedesaan melalui sektor pariwisata.
             </p>
             <a href="article.html">Read More</a>
           </div>
         </div>
-        <div class="blog-box">
+        <div data-aos="fade-left" data-aos-duration="1000" class="blog-box">
           <div class="blog-img">
-            <img src="../jpg/wisata.jpg" alt="Blog" />
+            <img src="../jpg/taman1.jpg" alt="Blog" />
           </div>
           <div class="blog-text">
-            <span>18 July 2023 / Jakarta</span>
+            <span>19 Novmeber 2023 / Jakarta</span>
             <a href="#" class="blog-title"
-              >What Has Happened of All of the web Design Ideas?</a
+              >Taman Nasional Komodo, Menikmati Pesona Situs Keajaiban Dunia</a
             >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Possimus, facilis aperiam sit officiis optio, velit in quae
-              reprehenderit ipsa unde soluta dicta natus tempora, numquam fugit
-              quos molestiae error provident?
+            Dalam upaya untuk terus menghadirkan serangkaian pengalaman
+                kuliner & menginap yang tak terlupakan bagi para tamu, ARTOTEL
+                Suites Mangkuluhur - Jakarta menghadirkan berbagai kuliner
             </p>
             <a href="#">Read More</a>
           </div>
         </div>
+        
+      </div><div data-aos="fade-up" data-aos-duration="1000" class="center-btn">
+        <a href="?destinasi" class="button">Lihat Semua Artikel</a>
       </div>
+      
     </section>
 
     <section class="footer">
       <div class="up">
         <div class="rata">
           <div class="footer-col">
-            <h4>company</h4>
+            <h4>Company</h4>
             <ul>
-              <li><a href="">about us</a></li>
-              <li><a href="">our service</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Service</a></li>
               <li><a href="">privacy policy</a></li>
-              <li><a href="">affiliate program</a></li>
+              <li><a href="">Management Team</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>get help</h4>
+            <h4>Get Help</h4>
             <ul>
               <li><a href="">FAQ</a></li>
-              <li><a href="">shipping</a></li>
-              <li><a href="">terurns</a></li>
-              <li><a href="">order status</a></li>
-              <li><a href="">payment options</a></li>
+              <li><a href="">Booking Guide</a></li>
+              <li><a href="">Purchase Process</a></li>
+              <li><a href="">Customer Support</a></li>
+              <li><a href="">Payment Options</a></li>
+              <li><a href="">Site Use Instructions</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>online shop</h4>
+            <h4>Other</h4>
             <ul>
-              <li><a href="">watch</a></li>
-              <li><a href="">bag</a></li>
-              <li><a href="">shoes</a></li>
-              <li><a href="">dress</a></li>
+              <li><a href="">Terms And Conditions</a></li>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">DestinEye blog</a></li>
+              <li><a href="">License and Copyright</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>follow us</h4>
+            <h4>Follow us</h4>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="https://instagram.com/destin_eye?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
@@ -337,18 +348,7 @@ $data_status = mysqli_fetch_assoc($query_status);
       </div>
     </section>
 
-    <div class="login-form-container">
-      <form action="">
-        <h3>Login</h3>
-        <input type="email" class="box" placeholder="enter your email" />
-        <input type="password" class="box" placeholder="enter your password" />
-        <input type="submit" value="login now" class="btn" />
-        <input type="checkbox" id="remember" />
-        <label for="remember">remember me</label>
-        <p>forget password? <a href="#">click here</a></p>
-        <p>don't have and account? <a href="#">register now</a></p>
-      </form>
-    </div>
+
 
     <div class="social">
       <a href="https://wa.me/6281246256358/"><i class="fab fa-whatsapp"></i></a>
@@ -364,5 +364,21 @@ $data_status = mysqli_fetch_assoc($query_status);
     <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    var navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+        navbar.classList.remove("transparent");
+      } else {
+        navbar.classList.add("transparent");
+      }
+    });
+  });
+
+      AOS.init();
+    </script>
   </body>
 </html>

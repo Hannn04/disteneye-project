@@ -1,0 +1,373 @@
+:root {
+    --blue: #00ffff;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  * {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.1s linear;
+    scroll-behavior: smooth;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #513c28;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: var(--blue);
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--blue);
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f2f2f2; /* Ganti dengan warna latar belakang header yang diinginkan */
+    color: #333; /* Ganti dengan warna teks header yang diinginkan */
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Ganti dengan warna latar belakang baris genap yang diinginkan */
+  }
+  
+  .table tr:hover {
+    background-color: #f5f5f5; /* Ganti dengan warna latar belakang saat dihover */
+  }
+  
+  /* Form styles */
+  .search {
+    margin-top: 20px;
+  }
+  
+  .search input,
+  .search button {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Optional: Style the form inputs as needed */
+  .search input {
+    width: 150px; /* Ganti dengan lebar yang diinginkan */
+  }
+  
+  /* Optional: Style the search button */
+  .search button {
+    background-color: #333; /* Ganti dengan warna tombol yang diinginkan */
+    color: white; /* Ganti dengan warna teks tombol yang diinginkan */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search button:hover {
+    background-color: #555; /* Ganti dengan warna tombol saat dihover */
+  }
+  
+      /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Ganti dengan warna latar belakang yang diinginkan */
+    padding: 15px;
+    color: white; /* Ganti dengan warna teks yang diinginkan */
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Ganti dengan warna teks yang diinginkan */
+  }
+  
+  .navbar-logo span {
+    color: #FFD700; /* Warna span di dalam logo */
+  }
+  
+  .navbar-nav {
+    display: flex;
+  }
+  
+  .navbar-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* Ganti dengan warna teks yang diinginkan */
+  }
+  
+  /* Dropdown styles */
+  .nav-item.dropdown {
+    position: relative;
+  }
+  
+  .nav-link.dropdown-toggle {
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333; /* Ganti dengan warna latar belakang yang diinginkan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    color: white; /* Ganti dengan warna teks yang diinginkan */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555; /* Ganti dengan warna latar belakang saat dihover */
+  }
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--blue);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--blue);
+  }
+  
+  .navbar-login {
+    padding: 10px;
+    color: black;
+    background-color: var(--blue);
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    width: 7%;
+    border: 1px solid var(--blue);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  }
+  
+
+  .heading {
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(../jpg/wisata1.jpg);
+    background-position: bottom center;
+    width: 100%;
+    position: relative;
+    height: 30vh;
+  }
+  
+  .text-heading h1 {
+    text-align: center;
+    padding-top: 4rem;
+    color: white;
+  }
+  
+  .text-heading p {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  
+  .text-heading i {
+    margin-right: 10px;
+  }
+  
+  .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 50px;
+  }
+  
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--blue);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+  }
+  
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #fff;
+  }
+
+  .tulisan p{
+    text-align: center;
+  }
+
+ .search{
+    text-align: center;
+    margin-top: 20px;
+ }
+  
+
+ input[type="text"]{
+    width: 10%;
+    border: 1px solid #f4f4f4;
+    height: 5vh;
+    margin-right: 10px;
+
+ }
+
+.cek{
+    margin-top: 3%;
+}
+
+
+ input[type="email"]{
+    width: 17%;
+    border: 1px solid #f4f4f4;
+    height: 5vh;
+    margin-right: 10px;
+
+ }
+
+ button{
+    width: 7%;
+    height: 5vh;
+    cursor: pointer;
+    background-color: var(--blue);
+ }
+
+button:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+
+
+.marquee {
+  border-top: 1px solid;
+  width: 100%;
+  padding: 7px;
+  font-size: 13px;
+}
+
+.marquee .text-heading font {
+  color: #fff;
+  background-color: orange;
+  padding: 10px;
+}

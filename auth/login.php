@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/masuk.css" />
   </head>
   <body>
     <div class="center">
@@ -34,6 +34,7 @@
         </div>
         <div class="pass">Forgot Password?</div>
         <input type="submit" name="login" />
+        <div class="signup_link">Login as <a href="../auth/?login-admin">Admin</a></div>
         <div class="signup_link">Don't have an account? <a href="../auth/register.php">Signup</a></div>
       </form>
     </div>

@@ -27,7 +27,7 @@
         <a href="index.html">Beranda</a>
         <a href="tur.html">Destinasi</a>
         <a href="blog.html">Blog & News</a>
-        <a href="#contact">Cek Booking</a>
+        <a href="?booking">Cek Booking</a>
       </div>
     </nav>
     <section id="home" class="beranda">
